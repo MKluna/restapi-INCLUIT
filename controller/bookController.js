@@ -1,9 +1,16 @@
 const author = require('../authors.json');
 const book = require('../books.json');
-
+const _ = require('lodash')
 
 exports.showBooks=async(req,res)=>{
-    res.json(book)
+    _.each(book, (books)=>{
+        _.each(author,(authors)=> {
+            if(authors.id == books.authorId){
+                books = {...book, author:{authors}}
+            }
+        })
+    })
+    res.json(book);
 }
 exports.newBook=async(req,res)=>{
     const {name, authorId} = req.body;

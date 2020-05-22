@@ -1,0 +1,17 @@
+[  
+    {  
+        "id": "1",  
+        "name": "Hamlet",  
+        "authorId": "1"   
+    },  
+    {  
+        "id": "2",  
+        "name": "En busca del tiempo perdido",  
+        "authorId": "2" 
+    },
+    {
+        "id": "3",  
+        "name": "Don Quijote de la Mancha",  
+        "authorId": "3" 
+    }
+]
